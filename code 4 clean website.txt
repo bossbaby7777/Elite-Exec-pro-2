@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Elite Cleaning | Florida's Professional Standard</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a2540; /* Executive Blue */
+            --accent: #c5a059;  /* Elite Gold */
+            --light: #f6f9fc;
+            --white: #ffffff;
+            --deal-bg: #ebf5ff;
+        }
+
+        body { font-family: 'Inter', sans-serif; margin: 0; color: var(--primary); line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 800; font-size: 1.5rem; text-transform: uppercase; color: var(--primary); }
+        .logo span { color: var(--accent); }
+        nav a { text-decoration: none; color: var(--primary); margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
+        .btn-nav { background: var(--primary); color: var(--white); padding: 10px 20px; border-radius: 5px; }
+
+        /* Hero Section */
+        header { padding: 100px 5%; background: linear-gradient(rgba(10, 37, 64, 0.8), rgba(10, 37, 64, 0.8)), url('https://unsplash.com') center/cover; color: var(--white); text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 20px; }
+        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+
+        /* Commercial Section */
+        .section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { padding: 30px; border: 1px solid #eee; border-radius: 8px; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card h3 { color: var(--accent); margin-top: 0; }
+
+        /* RESIDENTIAL DEAL BOX - "The Catch" */
+        .deal-box { background: var(--deal-bg); border: 3px dashed var(--primary); padding: 50px; border-radius: 20px; text-align: center; position: relative; margin-top: 50px; }
+        .badge { background: #ff4d4d; color: white; padding: 5px 15px; border-radius: 50px; font-weight: 800; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); }
+        .price-hero { font-size: 4rem; font-weight: 800; margin: 10px 0; color: var(--primary); }
+        .fine-print { font-size: 0.85rem; color: #666; margin-top: 20px; }
+
+        /* Buttons */
+        .cta-btn { display: inline-block; background: var(--accent); color: var(--white); padding: 18px 35px; border-radius: 5px; font-weight: 800; text-decoration: none; transition: 0.3s; cursor: pointer; border: none; font-size: 1.1rem; }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4); }
+
+        footer { background: var(--primary); color: var(--white); text-align: center; padding: 40px; margin-top: 50px; }
+        
+        @media (max-width: 768px) { header h1 { font-size: 2rem; } .price-hero { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">EXECUTIVE<span>ELITE</span></div>
+        <div>
+            <a href="#commercial">Commercial</a>
+            <a href="#residential">Residential Deal</a>
+            <a href="YOUR_STRIPE_LINK" class="btn-nav">Book Now</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Florida's Executive Standard</h1>
+        <p>Premium commercial cleaning and facility maintenance for the modern workspace. Serving offices, medical centers, and retail across Florida.</p>
+        <a href="#commercial" class="cta-btn">View Commercial Services</a>
+    </header>
+
+    <section class="section" id="commercial">
+        <h2 style="text-align:center">Commercial Cleaning Basics</h2>
+        <p style="text-align:center">Florida Rates: $0.10 - $0.25 per sq. ft. based on frequency.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Workspace Sanitization</h3>
+                <p>Medical-grade disinfection of all high-touch points, desks, and electronics to keep your team healthy.</p>
+            </div>
+            <div class="card">
+                <h3>Executive Floor Care</h3>
+                <p>HEPA-filtered vacuuming and hospital-grade mopping for pristine tile, wood, and carpeted surfaces.</p>
+            </div>
+            <div class="card">
+                <h3>Restroom Hygiene</h3>
+                <p>Complete fixture disinfection and supplies restocking (towels, soap, tissue) with every visit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="residential">
+        <div class="deal-box">
+            <div class="badge">LIMITED TIME FLORIDA OFFER</div>
+            <h2>The "Grab & Pull" Residential Special</h2>
+            <p>Why pay $200 per clean? Join the Elite Subscription and save thousands.</p>
+            <div class="price-hero">$19</div>
+            <p><strong>PER CLEANER / PER VISIT</strong><br>(2 Cleaners Provided Every Week)</p>
+            
+            <a href="YOUR_STRIPE_LINK" class="cta-btn">CLAIM THIS DEAL & PAY $300 DEEP CLEAN</a>
+            
+            <div class="fine-print">
+                *The Catch: Requires a $300 upfront deep clean to reach Executive Standards, a $52/month subscription, and a 6-month service lock-in commitment.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Executive Elite Cleaning Services. Fully Bonded & Insured.</p>
+    </footer>
+
+</body>
+</html>
